@@ -27,6 +27,14 @@
             color: white;
             font-size: 18px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button img {
+            width: 30px;
+            height: 30px;
         }
 
         button:hover {
@@ -42,11 +50,21 @@
 </head>
 <body>
     <h1>Jogo do Miguel</h1>
-    <button onclick="playAudio('Bico_de_cabra')">Bico de cabra</button>
-    <button onclick="playAudio('Sua_mala')">Sua mala</button>
-    <button onclick="playAudio('Sua_necessaire')">Sua necessaire</button>
-    <button onclick="playAudio('Seu_bau')">Seu baú</button>
-    <button onclick="playAudio('Seu_peteleco')">Seu peteleco</button>
+    <button onclick="playAudio('Bico_de_cabra')">
+        <img src="./images/bico_de_cabra.png" alt="Bico de cabra">Bico de cabra
+    </button>
+    <button onclick="playAudio('Sua_mala')">
+        <img src="./images/sua_mala.png" alt="Sua mala">Sua mala
+    </button>
+    <button onclick="playAudio('Sua_necessaire')">
+        <img src="./images/sua_necessaire.png" alt="Sua necessaire">Sua necessaire
+    </button>
+    <button onclick="playAudio('Seu_bau')">
+        <img src="./images/seu_bau.png" alt="Seu baú">Seu baú
+    </button>
+    <button onclick="playAudio('Seu_peteleco')">
+        <img src="./images/seu_peteleco.png" alt="Seu peteleco">Seu peteleco
+    </button>
 
     <script>
         function playAudio(fileName) {
